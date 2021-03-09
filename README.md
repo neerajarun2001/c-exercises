@@ -1,2 +1,2 @@
-# the-c-programming-language
-Solutions and notes to Kernighan and Ritchie: The C Programming Language
+# The C Programming Language (2nd Edition)
+March 2021
