@@ -1,0 +1,5 @@
+1-11: How would you test the word count program? What kinds of input are 
+most likely to uncover bugs if there are any?
+
+* words that wrap across newline -- something like th\nis
+* writing where no spaces are left after punctuation.like this
