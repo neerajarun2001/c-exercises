@@ -4,9 +4,10 @@
 int get_line(char s[], int lim);
 void copy(char to[], char from[]);
 
-/* 1-16: Revise the main routine of the longest line program so it will 
- * correctly print the length of arbitrary long input lines, and as much 
- * as possible of the text */
+/*
+ * 1-17: Write a program to print all input lines that are longer than 
+ *       80 characters.
+ * */
 int main() 
 {
 	int len;
@@ -21,7 +22,7 @@ int main()
 			copy(longest, line);
 		}
 	}
-	if (max > 0) 
+	if (max > 80) 
 		printf("%d %s", max, longest);
 	return 0;
 }
