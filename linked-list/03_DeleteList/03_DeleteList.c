@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
-/* Write a GetNth() function that takes a linked list and an integer 
- * index and returns the data value stored in the node at that index 
- * position. 0-indexed convention. */
+/* Write a Count() function that counts the number of times a given int 
+ * occurs in a list. The code for this has the classic list traversal 
+ * structure as demonstrated in Length(). */
+
 struct node* BuildOneTwoThree();
-void DeleteList();
+void DeleteList(struct node** headRef);
 void DeleteListTest();
 
 struct node {
@@ -40,16 +41,20 @@ struct node* BuildOneTwoThree()
 
 	return head;
 }
-void DeleteList(struct node** headRef) {
-	/* free() each node and set head pointer to NULL */
-	struct node* head = *headRef;
-  while (head != NULL) {
-		struct node* next = head->next;
-		free(head);
-	}
-}
-	void DeleteListTest() {
+void DeleteListTest() {
 	struct node* list = BuildOneTwoThree();
-
-	DeleteList(&myList);
+	DeleteList(&list);
 }
+void DeleteList(struct node** headRef) {
+/* free() each node, set head to NULL */
+  struct node* head = *headRef;
+	struct node* nextNode;
+
+	while (head != NULL) {
+		nextNode = head->next;
+		free(head);
+		head = nextNode;
+	}
+	head = NULL;
+}
+
