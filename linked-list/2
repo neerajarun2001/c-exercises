@@ -1,0 +1,14 @@
+#include <stdlib.h>
+/* Write a Count() function that counts the number of times a given int 
+ * occurs in a list. The code for this has the classic list traversal 
+ * structure as demonstrated in Length(). */
+struct node {
+	int data;
+	struct *node next;
+
+}
+int count(struct node* head, int searchFor);
+void CountTest();
+int main() 
+{
+}
