@@ -58,10 +58,8 @@ void InsertSort(struct node** headRef) {
 	struct node* current;
 	struct node* placeholder;
 	
-	newList = malloc(sizeof(struct node));
-	current = *headRef;
-
 	newList = NULL;
+	current = *headRef;
 
 	while (current != NULL) {
 		placeholder = current->next;
