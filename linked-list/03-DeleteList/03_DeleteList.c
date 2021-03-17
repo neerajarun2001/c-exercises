@@ -55,6 +55,6 @@ void DeleteList(struct node** headRef) {
 		free(head);
 		head = nextNode;
 	}
-	head = NULL;
+	*headRef = NULL; // have to dereference again since head is local
 }
 
