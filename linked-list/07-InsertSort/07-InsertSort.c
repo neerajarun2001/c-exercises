@@ -3,7 +3,7 @@
 #include <assert.h>
 /* Given list, rearranges nodes to be in sorted order */
 
-struct node* BuildOneTwoThree();
+struct node* BuildThreeTwoOne();
 void SortedInsert(struct node** headRef, struct node* newNode);
 void InsertSort(struct node** headRef);
 void InsertSortTest();
