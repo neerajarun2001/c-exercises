@@ -4,12 +4,7 @@
 int main() 
 {
 	int x{ };
-
 	std::cout << "Please enter a number: " << '\n';
-
-	std::cin >> x;
-
-	std::cout << "Here's twice your number: \n" << 2 * x << '\n';
-
+	std::cin >> x
 	return 0;
 }

@@ -1,0 +1,10 @@
+/* general structure of a function
+ * type identifier( args ) {
+ *   function body
+ * }`
+ */
+
+int main()
+{
+	return 0;
+}
