@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/io.cpp
+io.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/io.h
+iostream
+-
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/io.h
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/main.cpp
+io.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/io.h
+iostream
+-
+

@@ -4,4 +4,5 @@ project(ch2)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(functions functions.cpp)
+add_executable(functions functions.cpp doubleNum.cpp)
+add_executable(main main.cpp io.cpp)

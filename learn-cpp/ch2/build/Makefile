@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
 # Target rules for targets named functions
 
 # Build rule for target.
@@ -141,6 +154,33 @@ functions: cmake_check_build_system
 functions/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/build
 .PHONY : functions/fast
+
+doubleNum.o: doubleNum.cpp.o
+
+.PHONY : doubleNum.o
+
+# target to build an object file
+doubleNum.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/doubleNum.cpp.o
+.PHONY : doubleNum.cpp.o
+
+doubleNum.i: doubleNum.cpp.i
+
+.PHONY : doubleNum.i
+
+# target to preprocess a source file
+doubleNum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/doubleNum.cpp.i
+.PHONY : doubleNum.cpp.i
+
+doubleNum.s: doubleNum.cpp.s
+
+.PHONY : doubleNum.s
+
+# target to generate assembly for a file
+doubleNum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/doubleNum.cpp.s
+.PHONY : doubleNum.cpp.s
 
 functions.o: functions.cpp.o
 
@@ -169,6 +209,60 @@ functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/functions.cpp.s
 .PHONY : functions.cpp.s
 
+io.o: io.cpp.o
+
+.PHONY : io.o
+
+# target to build an object file
+io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/io.cpp.o
+.PHONY : io.cpp.o
+
+io.i: io.cpp.i
+
+.PHONY : io.i
+
+# target to preprocess a source file
+io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/io.cpp.i
+.PHONY : io.cpp.i
+
+io.s: io.cpp.s
+
+.PHONY : io.s
+
+# target to generate assembly for a file
+io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/io.cpp.s
+.PHONY : io.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -178,9 +272,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... functions"
+	@echo "... main"
+	@echo "... doubleNum.o"
+	@echo "... doubleNum.i"
+	@echo "... doubleNum.s"
 	@echo "... functions.o"
 	@echo "... functions.i"
 	@echo "... functions.s"
+	@echo "... io.o"
+	@echo "... io.i"
+	@echo "... io.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

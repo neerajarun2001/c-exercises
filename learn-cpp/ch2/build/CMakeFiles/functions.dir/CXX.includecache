@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/doubleNum.h
+
 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/functions.cpp
 iostream
 -
+doubleNum.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/doubleNum.h
 

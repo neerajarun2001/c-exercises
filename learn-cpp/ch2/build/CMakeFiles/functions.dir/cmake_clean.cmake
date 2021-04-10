@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/functions.dir/doubleNum.cpp.o"
   "CMakeFiles/functions.dir/functions.cpp.o"
   "functions"
   "functions.pdb"
