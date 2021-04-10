@@ -4,3 +4,4 @@ project(ch1 LANGUAGES CXX)
 
 add_executable(basics basics.cpp)
 
+set(CMAKE_CXX_STANDARD 17)
