@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named passFail
+
+# Build rule for target.
+passFail: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 passFail
+.PHONY : passFail
+
+# fast build rule for target.
+passFail/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/passFail.dir/build.make CMakeFiles/passFail.dir/build
+.PHONY : passFail/fast
+
+#=============================================================================
 # Target rules for targets named userCompareTwo
 
 # Build rule for target.
@@ -236,6 +249,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+passFail.o: passFail.cpp.o
+
+.PHONY : passFail.o
+
+# target to build an object file
+passFail.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/passFail.dir/build.make CMakeFiles/passFail.dir/passFail.cpp.o
+.PHONY : passFail.cpp.o
+
+passFail.i: passFail.cpp.i
+
+.PHONY : passFail.i
+
+# target to preprocess a source file
+passFail.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/passFail.dir/build.make CMakeFiles/passFail.dir/passFail.cpp.i
+.PHONY : passFail.cpp.i
+
+passFail.s: passFail.cpp.s
+
+.PHONY : passFail.s
+
+# target to generate assembly for a file
+passFail.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/passFail.dir/build.make CMakeFiles/passFail.dir/passFail.cpp.s
+.PHONY : passFail.cpp.s
+
 userCompareTwo.o: userCompareTwo.cpp.o
 
 .PHONY : userCompareTwo.o
@@ -272,6 +312,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... passFail"
 	@echo "... userCompareTwo"
 	@echo "... foo.o"
 	@echo "... foo.i"
@@ -282,6 +323,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... passFail.o"
+	@echo "... passFail.i"
+	@echo "... passFail.s"
 	@echo "... userCompareTwo.o"
 	@echo "... userCompareTwo.i"
 	@echo "... userCompareTwo.s"

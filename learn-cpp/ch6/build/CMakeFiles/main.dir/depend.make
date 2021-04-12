@@ -5,6 +5,7 @@ CMakeFiles/main.dir/foo.cpp.o: ../foo.cpp
 
 CMakeFiles/main.dir/goo.cpp.o: ../goo.cpp
 
+CMakeFiles/main.dir/main.cpp.o: ../constants.h
 CMakeFiles/main.dir/main.cpp.o: ../foo.h
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 

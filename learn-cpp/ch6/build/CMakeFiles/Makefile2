@@ -72,6 +72,7 @@ CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/passFail.dir/all
 all: CMakeFiles/userCompareTwo.dir/all
 all: CMakeFiles/main.dir/all
 
@@ -83,10 +84,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/passFail.dir/clean
 clean: CMakeFiles/userCompareTwo.dir/clean
 clean: CMakeFiles/main.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/passFail.dir
+
+# All Build rule for target.
+CMakeFiles/passFail.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/passFail.dir/build.make CMakeFiles/passFail.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/passFail.dir/build.make CMakeFiles/passFail.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=5,6 "Built target passFail"
+.PHONY : CMakeFiles/passFail.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/passFail.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/passFail.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles 0
+.PHONY : CMakeFiles/passFail.dir/rule
+
+# Convenience name for target.
+passFail: CMakeFiles/passFail.dir/rule
+
+.PHONY : passFail
+
+# clean rule for target.
+CMakeFiles/passFail.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/passFail.dir/build.make CMakeFiles/passFail.dir/clean
+.PHONY : CMakeFiles/passFail.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/userCompareTwo.dir
@@ -95,7 +124,7 @@ clean: CMakeFiles/main.dir/clean
 CMakeFiles/userCompareTwo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/userCompareTwo.dir/build.make CMakeFiles/userCompareTwo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/userCompareTwo.dir/build.make CMakeFiles/userCompareTwo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=5,6 "Built target userCompareTwo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=7,8 "Built target userCompareTwo"
 .PHONY : CMakeFiles/userCompareTwo.dir/all
 
 # Build rule for subdir invocation for target.

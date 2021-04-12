@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/constants.h
+
 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/foo.h
 
 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/main.cpp
+constants.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/constants.h
 foo.h
 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/foo.h
 iostream

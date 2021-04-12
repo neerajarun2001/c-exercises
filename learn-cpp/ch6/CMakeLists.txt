@@ -6,3 +6,4 @@ project(ch6)
 
 add_executable(main main.cpp foo.cpp goo.cpp)
 add_executable(userCompareTwo userCompareTwo.cpp)
+add_executable(passFail passFail.cpp)
