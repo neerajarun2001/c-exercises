@@ -10,4 +10,8 @@ CMakeFiles/control-flow.dir/characters.cpp.o: ../characters.h
 CMakeFiles/control-flow.dir/control-flow.cpp.o: ../calculate.h
 CMakeFiles/control-flow.dir/control-flow.cpp.o: ../characters.h
 CMakeFiles/control-flow.dir/control-flow.cpp.o: ../control-flow.cpp
+CMakeFiles/control-flow.dir/control-flow.cpp.o: ../prime.h
+
+CMakeFiles/control-flow.dir/prime.cpp.o: ../prime.cpp
+CMakeFiles/control-flow.dir/prime.cpp.o: ../prime.h
 

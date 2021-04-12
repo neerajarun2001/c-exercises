@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/calculate.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/build/CMakeFiles/control-flow.dir/calculate.cpp.o"
   "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/characters.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/build/CMakeFiles/control-flow.dir/characters.cpp.o"
   "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/control-flow.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/build/CMakeFiles/control-flow.dir/control-flow.cpp.o"
+  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/prime.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/build/CMakeFiles/control-flow.dir/prime.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

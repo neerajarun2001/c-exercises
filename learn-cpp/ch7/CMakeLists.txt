@@ -3,6 +3,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 project(ch7)
 
-add_executable(control-flow control-flow.cpp calculate.cpp characters.cpp)
+add_executable(control-flow control-flow.cpp calculate.cpp characters.cpp
+	                          prime.cpp)
 
 

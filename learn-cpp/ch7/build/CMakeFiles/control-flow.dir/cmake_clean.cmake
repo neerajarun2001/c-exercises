@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/control-flow.dir/calculate.cpp.o"
   "CMakeFiles/control-flow.dir/characters.cpp.o"
   "CMakeFiles/control-flow.dir/control-flow.cpp.o"
+  "CMakeFiles/control-flow.dir/prime.cpp.o"
   "control-flow"
   "control-flow.pdb"
 )

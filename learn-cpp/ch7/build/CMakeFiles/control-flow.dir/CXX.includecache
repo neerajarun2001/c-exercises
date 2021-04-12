@@ -6,21 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/calculate.h
-
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/characters.cpp
-characters.h
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/characters.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/prime.cpp
+prime.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/prime.h
 iostream
 -
 
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/characters.h
-
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/control-flow.cpp
-calculate.h
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/calculate.h
-characters.h
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/characters.h
-iostream
--
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/prime.h
 

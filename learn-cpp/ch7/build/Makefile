@@ -223,6 +223,33 @@ control-flow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/control-flow.dir/build.make CMakeFiles/control-flow.dir/control-flow.cpp.s
 .PHONY : control-flow.cpp.s
 
+prime.o: prime.cpp.o
+
+.PHONY : prime.o
+
+# target to build an object file
+prime.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control-flow.dir/build.make CMakeFiles/control-flow.dir/prime.cpp.o
+.PHONY : prime.cpp.o
+
+prime.i: prime.cpp.i
+
+.PHONY : prime.i
+
+# target to preprocess a source file
+prime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control-flow.dir/build.make CMakeFiles/control-flow.dir/prime.cpp.i
+.PHONY : prime.cpp.i
+
+prime.s: prime.cpp.s
+
+.PHONY : prime.s
+
+# target to generate assembly for a file
+prime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control-flow.dir/build.make CMakeFiles/control-flow.dir/prime.cpp.s
+.PHONY : prime.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -241,6 +268,9 @@ help:
 	@echo "... control-flow.o"
 	@echo "... control-flow.i"
 	@echo "... control-flow.s"
+	@echo "... prime.o"
+	@echo "... prime.i"
+	@echo "... prime.s"
 .PHONY : help
 
 
