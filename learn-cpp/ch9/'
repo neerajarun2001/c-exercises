@@ -1,0 +1,18 @@
+#include "selection-sort.h"
+#include <iterator>
+
+void selectionSort(int array[])
+{
+	// 1. find smallest item in array
+	int smallest{};
+	// 2. swap it with the item in index 0
+	int targetIndex{ 0 };
+	// 3. increment targetIndex, and repeat
+	int len { std::size(array) }
+
+	while(targetIndex != len - 1)
+	{
+		+=targetIndex
+	}
+
+}

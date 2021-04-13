@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch9/main.cpp
+algorithm
+-
+cstddef
+-
+iterator
+-
+iostream
+-
+string
+-
+selection-sort.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch9/selection-sort.h
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch9/selection-sort.h
+
