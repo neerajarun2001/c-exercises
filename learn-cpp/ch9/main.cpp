@@ -1,16 +1,75 @@
+#include <vector>
 #include <algorithm>
 #include <cstddef>
 #include <iterator>
 #include <iostream>
 #include <string>
+#include <array>
 #include "selection-sort.h"
 
 #define TEST
 
 void selectionSort(int array[9]);
-
+void reference(const int& ref)
+{
+	std::cout << ref << '\n';
+}
+void printLength(const std::array<int, 5>& array)
+{
+	std::cout << array.size() << '\n';
+}
 int main()
 {
+
+
+	// vector. dynamically sized array, don't need to give type at init.
+	std::vector vec { 1, 2, 3, 5 };
+	vec.resize(5);
+	std::vector tor(5); // direct initialization to empty size 5
+#ifndef TEST
+	std::array arr { 1, 2, 3, 4, 5 };
+	std::array<int, 5> expTypeAndSize { 1, 2, 3, 4, 5 };
+	std::cout << arr.at(3) << '\n';
+	printLength(arr);
+	// pointers to pointers exist, and can be used. array of linked lists, 
+	// or things like that most likely. 
+	// foreach loop demo program
+	// to remind ourselves, we use constexpr here because the 
+	// array can be treated as a compile-time constant
+	constexpr int fibonacci[]{ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 };
+	for (int num : fibonacci)
+	{
+		std::cout << num << ' ';
+	}
+	std::cout << '\n';
+	// good idea to use const reference for non-fundamental data 
+	// types, to avoid having to make copies of every element
+	const std::string strings[]{ "this", "is", "for-each", "loop" };
+	for (const auto& str : strings)
+	{
+		std::cout << str << ' ';
+	}
+	std::cout << '\n';
+	// generally want to pass non-fundamental data types by const 
+	// reference, like so:
+	reference(5);
+	reference(3 + 2);
+	int value{ 5 };
+	reference(value);
+	// references are aliases of objects or memories.
+	// must be initialized with a non-const l-value.
+	// can't be changed once initalized.
+	int value{ 5 };
+	int& ref{ value };
+	std::cout << value << '\n'; // 5
+	++ref;
+	std::cout << value << '\n'; // 6
+
+	int value{ 5 };
+	const int* ptr{ &value }; // pointer to a const value -- can't change val
+	int* const ptr{ &value }; // const pointer -- can't change pointer
+	const int* const ptr{ &value }; // const ptr to const value
+	
 	std::cout << "How many names would you like to enter? ";
   int numNames{};
 	std::cin >> numNames;
@@ -32,7 +91,6 @@ int main()
 	}
 	delete[] names;
   
-#ifndef TEST
 	std::cout << "Enter a positive integer: ";
 	std::size_t length{}; // usethe size_t type here
 	std::cin >> length;
