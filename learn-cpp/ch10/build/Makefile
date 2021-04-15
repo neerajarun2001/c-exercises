@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named anotherMain
+
+# Build rule for target.
+anotherMain: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 anotherMain
+.PHONY : anotherMain
+
+# fast build rule for target.
+anotherMain/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/anotherMain.dir/build.make CMakeFiles/anotherMain.dir/build
+.PHONY : anotherMain/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -141,6 +154,33 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+anotherMain.o: anotherMain.cpp.o
+
+.PHONY : anotherMain.o
+
+# target to build an object file
+anotherMain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/anotherMain.dir/build.make CMakeFiles/anotherMain.dir/anotherMain.cpp.o
+.PHONY : anotherMain.cpp.o
+
+anotherMain.i: anotherMain.cpp.i
+
+.PHONY : anotherMain.i
+
+# target to preprocess a source file
+anotherMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/anotherMain.dir/build.make CMakeFiles/anotherMain.dir/anotherMain.cpp.i
+.PHONY : anotherMain.cpp.i
+
+anotherMain.s: anotherMain.cpp.s
+
+.PHONY : anotherMain.s
+
+# target to generate assembly for a file
+anotherMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/anotherMain.dir/build.make CMakeFiles/anotherMain.dir/anotherMain.cpp.s
+.PHONY : anotherMain.cpp.s
 
 main.o: main.cpp.o
 
@@ -177,7 +217,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... anotherMain"
 	@echo "... main"
+	@echo "... anotherMain.o"
+	@echo "... anotherMain.i"
+	@echo "... anotherMain.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -4,3 +4,4 @@ set(CMAKE_CXX_STANDARD 17)
 project(ch10)
 
 add_executable(main main.cpp)
+add_executable(anotherMain anotherMain.cpp)
