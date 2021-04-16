@@ -4,18 +4,22 @@
 #include <cassert>
 #include <cstddef>
 
+// friend functions can access private members of a class
+// can have friend classes, or friend 
 class Calc
 {
 private: 
 	int m_value{};
 
 public:
+	static int m_calcs;
 	Calc& add(int value) { m_value += value; return *this; }
 	Calc& sub(int value) { m_value -= value; return *this; }
 	Calc& mult(int value) { m_value *= value; return *this; }
 
-	int getValue() { return m_value; }
+	int getValue() const { return m_value; }
 };
+int Calc::m_calcs{ 5 };
 class IntArray
 {
 private: 
@@ -136,8 +140,32 @@ class DateClass
 		std::cout << m_year << '/' << m_month << '/' << m_day << '\n';
 	}
 };
+class Fruit
+{ 
+public:
+	enum FruitType
+	{
+		APPLE,
+		BANANA,
+		CHERRY
+	};
+
+private:
+	FruitType m_type;
+	int m_percentageEaten = 0;
+
+public:
+
+	Fruit(FruitType type) : m_type{type}
+	{
+	}
+
+	FruitType getType() { return m_type; }
+	int getPercentageEaten() { return m_percentageEaten; }
+};
 int main()
 {
+	Calc::m_calcs = 0;
 	Calc calc{};
 	calc.add(5).sub(3).mult(4);
 
