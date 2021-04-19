@@ -5,4 +5,5 @@ project(ch1 LANGUAGES CXX)
 
 add_executable(basics basics.cpp)
 add_executable(first-program first-program.cpp)
+add_executable(quiz quiz.cpp)
 

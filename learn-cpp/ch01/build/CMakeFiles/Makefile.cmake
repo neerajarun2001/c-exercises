@@ -42,6 +42,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/quiz.dir/DependInfo.cmake"
   "CMakeFiles/first-program.dir/DependInfo.cmake"
   "CMakeFiles/basics.dir/DependInfo.cmake"
   )

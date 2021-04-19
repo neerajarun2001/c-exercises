@@ -62,10 +62,10 @@ RM = /usr/local/Cellar/cmake/3.19.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2
+CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build
+CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/functions.dir/depend.make
@@ -78,29 +78,29 @@ include CMakeFiles/functions.dir/flags.make
 
 CMakeFiles/functions.dir/functions.cpp.o: CMakeFiles/functions.dir/flags.make
 CMakeFiles/functions.dir/functions.cpp.o: ../functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/functions.dir/functions.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/functions.dir/functions.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/functions.dir/functions.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/functions.dir/functions.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/functions.cpp
 
 CMakeFiles/functions.dir/functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/functions.dir/functions.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/functions.cpp > CMakeFiles/functions.dir/functions.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/functions.cpp > CMakeFiles/functions.dir/functions.cpp.i
 
 CMakeFiles/functions.dir/functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/functions.dir/functions.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/functions.cpp -o CMakeFiles/functions.dir/functions.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/functions.cpp -o CMakeFiles/functions.dir/functions.cpp.s
 
 CMakeFiles/functions.dir/doubleNum.cpp.o: CMakeFiles/functions.dir/flags.make
 CMakeFiles/functions.dir/doubleNum.cpp.o: ../doubleNum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/functions.dir/doubleNum.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/functions.dir/doubleNum.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/doubleNum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/functions.dir/doubleNum.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/functions.dir/doubleNum.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/doubleNum.cpp
 
 CMakeFiles/functions.dir/doubleNum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/functions.dir/doubleNum.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/doubleNum.cpp > CMakeFiles/functions.dir/doubleNum.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/doubleNum.cpp > CMakeFiles/functions.dir/doubleNum.cpp.i
 
 CMakeFiles/functions.dir/doubleNum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/functions.dir/doubleNum.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/doubleNum.cpp -o CMakeFiles/functions.dir/doubleNum.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/doubleNum.cpp -o CMakeFiles/functions.dir/doubleNum.cpp.s
 
 # Object files for target functions
 functions_OBJECTS = \
@@ -114,7 +114,7 @@ functions: CMakeFiles/functions.dir/functions.cpp.o
 functions: CMakeFiles/functions.dir/doubleNum.cpp.o
 functions: CMakeFiles/functions.dir/build.make
 functions: CMakeFiles/functions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable functions"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/functions.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +127,6 @@ CMakeFiles/functions.dir/clean:
 .PHONY : CMakeFiles/functions.dir/clean
 
 CMakeFiles/functions.dir/depend:
-	cd /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles/functions.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles/functions.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/functions.dir/depend
 

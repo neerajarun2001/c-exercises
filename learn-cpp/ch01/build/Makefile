@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.19.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch1
+CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch1/build
+CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch1/build/CMakeFiles /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01/build/CMakeFiles /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named quiz
+
+# Build rule for target.
+quiz: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quiz
+.PHONY : quiz
+
+# fast build rule for target.
+quiz/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/build
+.PHONY : quiz/fast
 
 #=============================================================================
 # Target rules for targets named first-program
@@ -209,6 +222,33 @@ first-program.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-program.dir/build.make CMakeFiles/first-program.dir/first-program.cpp.s
 .PHONY : first-program.cpp.s
 
+quiz.o: quiz.cpp.o
+
+.PHONY : quiz.o
+
+# target to build an object file
+quiz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/quiz.cpp.o
+.PHONY : quiz.cpp.o
+
+quiz.i: quiz.cpp.i
+
+.PHONY : quiz.i
+
+# target to preprocess a source file
+quiz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/quiz.cpp.i
+.PHONY : quiz.cpp.i
+
+quiz.s: quiz.cpp.s
+
+.PHONY : quiz.s
+
+# target to generate assembly for a file
+quiz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/quiz.cpp.s
+.PHONY : quiz.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,12 +259,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... basics"
 	@echo "... first-program"
+	@echo "... quiz"
 	@echo "... basics.o"
 	@echo "... basics.i"
 	@echo "... basics.s"
 	@echo "... first-program.o"
 	@echo "... first-program.i"
 	@echo "... first-program.s"
+	@echo "... quiz.o"
+	@echo "... quiz.i"
+	@echo "... quiz.s"
 .PHONY : help
 
 

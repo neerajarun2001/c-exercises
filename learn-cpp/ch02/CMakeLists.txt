@@ -6,3 +6,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(functions functions.cpp doubleNum.cpp)
 add_executable(main main.cpp io.cpp)
+add_executable(quiz quiz/main.cpp quiz/io.cpp)

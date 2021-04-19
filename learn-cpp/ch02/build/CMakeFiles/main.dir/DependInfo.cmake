@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/io.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles/main.dir/io.cpp.o"
-  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/main.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles/main.dir/main.cpp.o"
+  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/io.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles/main.dir/io.cpp.o"
+  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/main.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

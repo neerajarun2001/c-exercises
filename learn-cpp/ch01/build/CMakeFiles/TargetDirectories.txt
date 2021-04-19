@@ -1,4 +1,5 @@
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch1/build/CMakeFiles/rebuild_cache.dir
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch1/build/CMakeFiles/edit_cache.dir
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch1/build/CMakeFiles/first-program.dir
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch1/build/CMakeFiles/basics.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01/build/CMakeFiles/quiz.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01/build/CMakeFiles/rebuild_cache.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01/build/CMakeFiles/edit_cache.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01/build/CMakeFiles/first-program.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch01/build/CMakeFiles/basics.dir

@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/quiz.dir/quiz/main.cpp.o CMakeFiles/quiz.dir/quiz/io.cpp.o -o quiz 

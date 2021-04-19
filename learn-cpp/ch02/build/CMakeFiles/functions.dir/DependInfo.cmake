@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/doubleNum.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles/functions.dir/doubleNum.cpp.o"
-  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/functions.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles/functions.dir/functions.cpp.o"
+  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/doubleNum.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles/functions.dir/doubleNum.cpp.o"
+  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/functions.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles/functions.dir/functions.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

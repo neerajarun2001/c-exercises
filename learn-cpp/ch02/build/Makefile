@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.19.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2
+CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build
+CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch02/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named quiz
+
+# Build rule for target.
+quiz: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quiz
+.PHONY : quiz
+
+# fast build rule for target.
+quiz/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/build
+.PHONY : quiz/fast
 
 #=============================================================================
 # Target rules for targets named main
@@ -263,6 +276,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+quiz/io.o: quiz/io.cpp.o
+
+.PHONY : quiz/io.o
+
+# target to build an object file
+quiz/io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/quiz/io.cpp.o
+.PHONY : quiz/io.cpp.o
+
+quiz/io.i: quiz/io.cpp.i
+
+.PHONY : quiz/io.i
+
+# target to preprocess a source file
+quiz/io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/quiz/io.cpp.i
+.PHONY : quiz/io.cpp.i
+
+quiz/io.s: quiz/io.cpp.s
+
+.PHONY : quiz/io.s
+
+# target to generate assembly for a file
+quiz/io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/quiz/io.cpp.s
+.PHONY : quiz/io.cpp.s
+
+quiz/main.o: quiz/main.cpp.o
+
+.PHONY : quiz/main.o
+
+# target to build an object file
+quiz/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/quiz/main.cpp.o
+.PHONY : quiz/main.cpp.o
+
+quiz/main.i: quiz/main.cpp.i
+
+.PHONY : quiz/main.i
+
+# target to preprocess a source file
+quiz/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/quiz/main.cpp.i
+.PHONY : quiz/main.cpp.i
+
+quiz/main.s: quiz/main.cpp.s
+
+.PHONY : quiz/main.s
+
+# target to generate assembly for a file
+quiz/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/quiz/main.cpp.s
+.PHONY : quiz/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -273,6 +340,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... functions"
 	@echo "... main"
+	@echo "... quiz"
 	@echo "... doubleNum.o"
 	@echo "... doubleNum.i"
 	@echo "... doubleNum.s"
@@ -285,6 +353,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... quiz/io.o"
+	@echo "... quiz/io.i"
+	@echo "... quiz/io.s"
+	@echo "... quiz/main.o"
+	@echo "... quiz/main.i"
+	@echo "... quiz/main.s"
 .PHONY : help
 
 
