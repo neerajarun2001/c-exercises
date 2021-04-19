@@ -63,15 +63,16 @@ RM = /usr/local/Cellar/cmake/3.19.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch4
+CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch04
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch4/build
+CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch04/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/quiz.dir/all
 all: CMakeFiles/data-types.dir/all
 
 .PHONY : all
@@ -82,9 +83,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/quiz.dir/clean
 clean: CMakeFiles/data-types.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/quiz.dir
+
+# All Build rule for target.
+CMakeFiles/quiz.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch04/build/CMakeFiles --progress-num=3,4 "Built target quiz"
+.PHONY : CMakeFiles/quiz.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/quiz.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch04/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/quiz.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch04/build/CMakeFiles 0
+.PHONY : CMakeFiles/quiz.dir/rule
+
+# Convenience name for target.
+quiz: CMakeFiles/quiz.dir/rule
+
+.PHONY : quiz
+
+# clean rule for target.
+CMakeFiles/quiz.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quiz.dir/build.make CMakeFiles/quiz.dir/clean
+.PHONY : CMakeFiles/quiz.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/data-types.dir
@@ -93,14 +122,14 @@ clean: CMakeFiles/data-types.dir/clean
 CMakeFiles/data-types.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-types.dir/build.make CMakeFiles/data-types.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-types.dir/build.make CMakeFiles/data-types.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch4/build/CMakeFiles --progress-num=1,2 "Built target data-types"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch04/build/CMakeFiles --progress-num=1,2 "Built target data-types"
 .PHONY : CMakeFiles/data-types.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/data-types.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch4/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch04/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/data-types.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch4/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch04/build/CMakeFiles 0
 .PHONY : CMakeFiles/data-types.dir/rule
 
 # Convenience name for target.
