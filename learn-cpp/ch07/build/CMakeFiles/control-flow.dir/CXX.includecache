@@ -6,11 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/prime.cpp
-prime.h
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/prime.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/calculate.cpp
+calculate.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/calculate.h
 iostream
 -
 
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/prime.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/calculate.h
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/characters.cpp
+characters.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/characters.h
+iostream
+-
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/characters.h
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/control-flow.cpp
+calculate.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/calculate.h
+characters.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/characters.h
+prime.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/prime.h
+iostream
+-
+cassert
+-
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/prime.cpp
+prime.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/prime.h
+iostream
+-
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/prime.h
 

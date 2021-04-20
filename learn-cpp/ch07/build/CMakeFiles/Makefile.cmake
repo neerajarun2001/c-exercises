@@ -47,5 +47,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/q2.dir/DependInfo.cmake"
+  "CMakeFiles/q1.dir/DependInfo.cmake"
   "CMakeFiles/control-flow.dir/DependInfo.cmake"
   )

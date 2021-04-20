@@ -63,15 +63,17 @@ RM = /usr/local/Cellar/cmake/3.19.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7
+CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/build
+CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/q2.dir/all
+all: CMakeFiles/q1.dir/all
 all: CMakeFiles/control-flow.dir/all
 
 .PHONY : all
@@ -82,9 +84,65 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/q2.dir/clean
+clean: CMakeFiles/q1.dir/clean
 clean: CMakeFiles/control-flow.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/q2.dir
+
+# All Build rule for target.
+CMakeFiles/q2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build/CMakeFiles --progress-num=8,9 "Built target q2"
+.PHONY : CMakeFiles/q2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/q2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/q2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build/CMakeFiles 0
+.PHONY : CMakeFiles/q2.dir/rule
+
+# Convenience name for target.
+q2: CMakeFiles/q2.dir/rule
+
+.PHONY : q2
+
+# clean rule for target.
+CMakeFiles/q2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/clean
+.PHONY : CMakeFiles/q2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/q1.dir
+
+# All Build rule for target.
+CMakeFiles/q1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build/CMakeFiles --progress-num=6,7 "Built target q1"
+.PHONY : CMakeFiles/q1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/q1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/q1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build/CMakeFiles 0
+.PHONY : CMakeFiles/q1.dir/rule
+
+# Convenience name for target.
+q1: CMakeFiles/q1.dir/rule
+
+.PHONY : q1
+
+# clean rule for target.
+CMakeFiles/q1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/clean
+.PHONY : CMakeFiles/q1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/control-flow.dir
@@ -93,14 +151,14 @@ clean: CMakeFiles/control-flow.dir/clean
 CMakeFiles/control-flow.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/control-flow.dir/build.make CMakeFiles/control-flow.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/control-flow.dir/build.make CMakeFiles/control-flow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target control-flow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target control-flow"
 .PHONY : CMakeFiles/control-flow.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/control-flow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/control-flow.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch7/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch07/build/CMakeFiles 0
 .PHONY : CMakeFiles/control-flow.dir/rule
 
 # Convenience name for target.

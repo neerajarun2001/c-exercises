@@ -6,4 +6,7 @@ project(ch7)
 add_executable(control-flow control-flow.cpp calculate.cpp characters.cpp
 	                          prime.cpp)
 
+add_executable(q1 quiz/q1.cpp)
+add_executable(q2 quiz/q2.cpp)
+
 
