@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/quiz/constants.h
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/quiz/q2.cpp
+constants.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/quiz/constants.h
+iostream
+-
+

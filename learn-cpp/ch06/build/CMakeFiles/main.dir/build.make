@@ -62,10 +62,10 @@ RM = /usr/local/Cellar/cmake/3.19.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6
+CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build
+CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -78,42 +78,42 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
 CMakeFiles/main.dir/foo.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/foo.cpp.o: ../foo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/foo.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/foo.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/foo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/foo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/foo.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/foo.cpp
 
 CMakeFiles/main.dir/foo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/foo.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/foo.cpp > CMakeFiles/main.dir/foo.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/foo.cpp > CMakeFiles/main.dir/foo.cpp.i
 
 CMakeFiles/main.dir/foo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/foo.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/foo.cpp -o CMakeFiles/main.dir/foo.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/foo.cpp -o CMakeFiles/main.dir/foo.cpp.s
 
 CMakeFiles/main.dir/goo.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/goo.cpp.o: ../goo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/goo.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/goo.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/goo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/goo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/goo.cpp.o -c /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/goo.cpp
 
 CMakeFiles/main.dir/goo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/goo.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/goo.cpp > CMakeFiles/main.dir/goo.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/goo.cpp > CMakeFiles/main.dir/goo.cpp.i
 
 CMakeFiles/main.dir/goo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/goo.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/goo.cpp -o CMakeFiles/main.dir/goo.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/goo.cpp -o CMakeFiles/main.dir/goo.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -129,7 +129,7 @@ main: CMakeFiles/main.dir/foo.cpp.o
 main: CMakeFiles/main.dir/goo.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -142,6 +142,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/constants.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/constants.h
 
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/foo.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/foo.cpp
 
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/main.cpp
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/foo.h
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/goo.cpp
+
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/main.cpp
 constants.h
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/constants.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/constants.h
 foo.h
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/foo.h
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/foo.h
 iostream
 -
 

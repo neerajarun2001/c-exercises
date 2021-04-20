@@ -1,5 +1,8 @@
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles/rebuild_cache.dir
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles/edit_cache.dir
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles/passFail.dir
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles/userCompareTwo.dir
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles/main.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/rebuild_cache.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/edit_cache.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/main.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/passFail.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/q2.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/q1.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/q3.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/userCompareTwo.dir

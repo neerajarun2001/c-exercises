@@ -63,18 +63,21 @@ RM = /usr/local/Cellar/cmake/3.19.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6
+CMAKE_SOURCE_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build
+CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/passFail.dir/all
-all: CMakeFiles/userCompareTwo.dir/all
 all: CMakeFiles/main.dir/all
+all: CMakeFiles/passFail.dir/all
+all: CMakeFiles/q2.dir/all
+all: CMakeFiles/q1.dir/all
+all: CMakeFiles/q3.dir/all
+all: CMakeFiles/userCompareTwo.dir/all
 
 .PHONY : all
 
@@ -84,11 +87,41 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/passFail.dir/clean
-clean: CMakeFiles/userCompareTwo.dir/clean
 clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/passFail.dir/clean
+clean: CMakeFiles/q2.dir/clean
+clean: CMakeFiles/q1.dir/clean
+clean: CMakeFiles/q3.dir/clean
+clean: CMakeFiles/userCompareTwo.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=1,2,3,4 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+
+.PHONY : main
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/passFail.dir
@@ -97,14 +130,14 @@ clean: CMakeFiles/main.dir/clean
 CMakeFiles/passFail.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/passFail.dir/build.make CMakeFiles/passFail.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/passFail.dir/build.make CMakeFiles/passFail.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=5,6 "Built target passFail"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=5,6 "Built target passFail"
 .PHONY : CMakeFiles/passFail.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/passFail.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/passFail.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 0
 .PHONY : CMakeFiles/passFail.dir/rule
 
 # Convenience name for target.
@@ -118,20 +151,101 @@ CMakeFiles/passFail.dir/clean:
 .PHONY : CMakeFiles/passFail.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/q2.dir
+
+# All Build rule for target.
+CMakeFiles/q2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=9,10 "Built target q2"
+.PHONY : CMakeFiles/q2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/q2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/q2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 0
+.PHONY : CMakeFiles/q2.dir/rule
+
+# Convenience name for target.
+q2: CMakeFiles/q2.dir/rule
+
+.PHONY : q2
+
+# clean rule for target.
+CMakeFiles/q2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/clean
+.PHONY : CMakeFiles/q2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/q1.dir
+
+# All Build rule for target.
+CMakeFiles/q1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=7,8 "Built target q1"
+.PHONY : CMakeFiles/q1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/q1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/q1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 0
+.PHONY : CMakeFiles/q1.dir/rule
+
+# Convenience name for target.
+q1: CMakeFiles/q1.dir/rule
+
+.PHONY : q1
+
+# clean rule for target.
+CMakeFiles/q1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/clean
+.PHONY : CMakeFiles/q1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/q3.dir
+
+# All Build rule for target.
+CMakeFiles/q3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=11,12 "Built target q3"
+.PHONY : CMakeFiles/q3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/q3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/q3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 0
+.PHONY : CMakeFiles/q3.dir/rule
+
+# Convenience name for target.
+q3: CMakeFiles/q3.dir/rule
+
+.PHONY : q3
+
+# clean rule for target.
+CMakeFiles/q3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/clean
+.PHONY : CMakeFiles/q3.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/userCompareTwo.dir
 
 # All Build rule for target.
 CMakeFiles/userCompareTwo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/userCompareTwo.dir/build.make CMakeFiles/userCompareTwo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/userCompareTwo.dir/build.make CMakeFiles/userCompareTwo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=7,8 "Built target userCompareTwo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles --progress-num=13,14 "Built target userCompareTwo"
 .PHONY : CMakeFiles/userCompareTwo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/userCompareTwo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/userCompareTwo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles 0
 .PHONY : CMakeFiles/userCompareTwo.dir/rule
 
 # Convenience name for target.
@@ -143,33 +257,6 @@ userCompareTwo: CMakeFiles/userCompareTwo.dir/rule
 CMakeFiles/userCompareTwo.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/userCompareTwo.dir/build.make CMakeFiles/userCompareTwo.dir/clean
 .PHONY : CMakeFiles/userCompareTwo.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/main.dir
-
-# All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles --progress-num=1,2,3,4 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: CMakeFiles/main.dir/rule
-
-.PHONY : main
-
-# clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,4 +1,0 @@
-int doSomething() 
-{
-	return 5;
-}

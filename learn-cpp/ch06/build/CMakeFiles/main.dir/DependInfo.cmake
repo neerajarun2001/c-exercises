@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/foo.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles/main.dir/foo.cpp.o"
-  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/goo.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles/main.dir/goo.cpp.o"
-  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/main.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch6/build/CMakeFiles/main.dir/main.cpp.o"
+  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/foo.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/main.dir/foo.cpp.o"
+  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/goo.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/main.dir/goo.cpp.o"
+  "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/main.cpp" "/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch06/build/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
