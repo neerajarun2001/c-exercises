@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch08/main.cpp
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch08/quiz.cpp
 iostream
+-
+string
 -
 
