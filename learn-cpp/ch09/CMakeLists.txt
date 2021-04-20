@@ -5,3 +5,4 @@ project(ch9)
 
 add_executable(main main.cpp)
 add_executable(warning warning.cpp)
+add_executable(q1 quiz/q1.cpp)

@@ -21,12 +21,12 @@ void printLength(const std::array<int, 5>& array)
 int main()
 {
 
+#ifndef TEST
 
 	// vector. dynamically sized array, don't need to give type at init.
 	std::vector vec { 1, 2, 3, 5 };
 	vec.resize(5);
 	std::vector tor(5); // direct initialization to empty size 5
-#ifndef TEST
 	std::array arr { 1, 2, 3, 4, 5 };
 	std::array<int, 5> expTypeAndSize { 1, 2, 3, 4, 5 };
 	std::cout << arr.at(3) << '\n';
