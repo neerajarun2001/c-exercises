@@ -72,6 +72,7 @@ CMAKE_BINARY_DIR = /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/binarySearch.dir/all
 all: CMakeFiles/anotherMain.dir/all
 all: CMakeFiles/main.dir/all
 
@@ -83,10 +84,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/binarySearch.dir/clean
 clean: CMakeFiles/anotherMain.dir/clean
 clean: CMakeFiles/main.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/binarySearch.dir
+
+# All Build rule for target.
+CMakeFiles/binarySearch.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarySearch.dir/build.make CMakeFiles/binarySearch.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarySearch.dir/build.make CMakeFiles/binarySearch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles --progress-num=3,4 "Built target binarySearch"
+.PHONY : CMakeFiles/binarySearch.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/binarySearch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/binarySearch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles 0
+.PHONY : CMakeFiles/binarySearch.dir/rule
+
+# Convenience name for target.
+binarySearch: CMakeFiles/binarySearch.dir/rule
+
+.PHONY : binarySearch
+
+# clean rule for target.
+CMakeFiles/binarySearch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarySearch.dir/build.make CMakeFiles/binarySearch.dir/clean
+.PHONY : CMakeFiles/binarySearch.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/anotherMain.dir
@@ -122,7 +151,7 @@ CMakeFiles/anotherMain.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles --progress-num=3,4 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles --progress-num=5,6 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.

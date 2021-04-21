@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named binarySearch
+
+# Build rule for target.
+binarySearch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binarySearch
+.PHONY : binarySearch
+
+# fast build rule for target.
+binarySearch/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarySearch.dir/build.make CMakeFiles/binarySearch.dir/build
+.PHONY : binarySearch/fast
+
+#=============================================================================
 # Target rules for targets named anotherMain
 
 # Build rule for target.
@@ -209,6 +222,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+quiz/binarySearch.o: quiz/binarySearch.cpp.o
+
+.PHONY : quiz/binarySearch.o
+
+# target to build an object file
+quiz/binarySearch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarySearch.dir/build.make CMakeFiles/binarySearch.dir/quiz/binarySearch.cpp.o
+.PHONY : quiz/binarySearch.cpp.o
+
+quiz/binarySearch.i: quiz/binarySearch.cpp.i
+
+.PHONY : quiz/binarySearch.i
+
+# target to preprocess a source file
+quiz/binarySearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarySearch.dir/build.make CMakeFiles/binarySearch.dir/quiz/binarySearch.cpp.i
+.PHONY : quiz/binarySearch.cpp.i
+
+quiz/binarySearch.s: quiz/binarySearch.cpp.s
+
+.PHONY : quiz/binarySearch.s
+
+# target to generate assembly for a file
+quiz/binarySearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binarySearch.dir/build.make CMakeFiles/binarySearch.dir/quiz/binarySearch.cpp.s
+.PHONY : quiz/binarySearch.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -218,6 +258,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... anotherMain"
+	@echo "... binarySearch"
 	@echo "... main"
 	@echo "... anotherMain.o"
 	@echo "... anotherMain.i"
@@ -225,6 +266,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... quiz/binarySearch.o"
+	@echo "... quiz/binarySearch.i"
+	@echo "... quiz/binarySearch.s"
 .PHONY : help
 
 

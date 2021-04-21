@@ -1,4 +1,5 @@
 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles/rebuild_cache.dir
 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles/edit_cache.dir
+/Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles/binarySearch.dir
 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles/anotherMain.dir
 /Users/Nrj/Desktop/mars/exercises/learn-cpp/ch10/build/CMakeFiles/main.dir
