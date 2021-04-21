@@ -130,6 +130,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named q3
+
+# Build rule for target.
+q3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 q3
+.PHONY : q3
+
+# fast build rule for target.
+q3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/build
+.PHONY : q3/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named q2
+
+# Build rule for target.
+q2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 q2
+.PHONY : q2
+
+# fast build rule for target.
+q2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/build
+.PHONY : q2/fast
+
+#=============================================================================
 # Target rules for targets named q1
 
 # Build rule for target.
@@ -154,19 +193,6 @@ warning: cmake_check_build_system
 warning/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warning.dir/build.make CMakeFiles/warning.dir/build
 .PHONY : warning/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
 
 main.o: main.cpp.o
 
@@ -222,6 +248,60 @@ quiz/q1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q1.dir/build.make CMakeFiles/q1.dir/quiz/q1.cpp.s
 .PHONY : quiz/q1.cpp.s
 
+quiz/q2.o: quiz/q2.cpp.o
+
+.PHONY : quiz/q2.o
+
+# target to build an object file
+quiz/q2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/quiz/q2.cpp.o
+.PHONY : quiz/q2.cpp.o
+
+quiz/q2.i: quiz/q2.cpp.i
+
+.PHONY : quiz/q2.i
+
+# target to preprocess a source file
+quiz/q2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/quiz/q2.cpp.i
+.PHONY : quiz/q2.cpp.i
+
+quiz/q2.s: quiz/q2.cpp.s
+
+.PHONY : quiz/q2.s
+
+# target to generate assembly for a file
+quiz/q2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2.dir/build.make CMakeFiles/q2.dir/quiz/q2.cpp.s
+.PHONY : quiz/q2.cpp.s
+
+quiz/q3.o: quiz/q3.cpp.o
+
+.PHONY : quiz/q3.o
+
+# target to build an object file
+quiz/q3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/quiz/q3.cpp.o
+.PHONY : quiz/q3.cpp.o
+
+quiz/q3.i: quiz/q3.cpp.i
+
+.PHONY : quiz/q3.i
+
+# target to preprocess a source file
+quiz/q3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/quiz/q3.cpp.i
+.PHONY : quiz/q3.cpp.i
+
+quiz/q3.s: quiz/q3.cpp.s
+
+.PHONY : quiz/q3.s
+
+# target to generate assembly for a file
+quiz/q3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/q3.dir/build.make CMakeFiles/q3.dir/quiz/q3.cpp.s
+.PHONY : quiz/q3.cpp.s
+
 warning.o: warning.cpp.o
 
 .PHONY : warning.o
@@ -259,6 +339,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... q1"
+	@echo "... q2"
+	@echo "... q3"
 	@echo "... warning"
 	@echo "... main.o"
 	@echo "... main.i"
@@ -266,6 +348,12 @@ help:
 	@echo "... quiz/q1.o"
 	@echo "... quiz/q1.i"
 	@echo "... quiz/q1.s"
+	@echo "... quiz/q2.o"
+	@echo "... quiz/q2.i"
+	@echo "... quiz/q2.s"
+	@echo "... quiz/q3.o"
+	@echo "... quiz/q3.i"
+	@echo "... quiz/q3.s"
 	@echo "... warning.o"
 	@echo "... warning.i"
 	@echo "... warning.s"
