@@ -9,7 +9,7 @@ public:
 	{
 	}
 
-	int getId() const { retrn m_id; }
+	int getId() const { return m_id; }
 protected:
 	void print() 
 	{
