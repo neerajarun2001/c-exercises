@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0.0)
+PROJECT(ch02)
+FIND_PACKAGE( OpenCV 4.0.0 REQUIRED )
+add_executable(${PROJECT_NAME} video.cpp)
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
